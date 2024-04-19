@@ -24,8 +24,9 @@ func modifications(words []string) []string {
 
 // read file in the command line, convert/modify data then write file
 func main() {
-	if len(os.Args) < 2 {
-		log.Fatal("Missing filename arguments")
+	if len(os.Args) != 3 { // files sample.txt result.txt
+		log.Fatal("Incorrect filename arguments")
+		return
 	}
 
 	args := os.Args[1:]
