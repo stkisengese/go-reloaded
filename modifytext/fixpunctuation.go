@@ -4,7 +4,7 @@ import "strings"
 
 func FixPunctuation(s []string) []string {
 	punctuations := []string{",", ".", "!", "?", ":", ";"}
-
+// handle puntuation mark at start of words
 	for i, word := range s {
 		for _, mark := range punctuations {
 			if strings.HasPrefix(word, string(mark)) && !strings.HasSuffix(word, string(mark)) && s[i] != s[len(s)-1] {
@@ -13,7 +13,7 @@ func FixPunctuation(s []string) []string {
 			}
 		}
 	}
-
+// handle group punctuations marks within the slices
 	for i, word := range s {
 		for _, mark := range punctuations {
 			if strings.HasPrefix(word, string(mark)) && strings.HasSuffix(word, string(mark)) && s[i] != s[len(s)-1] {
@@ -22,7 +22,7 @@ func FixPunctuation(s []string) []string {
 			}
 		}
 	}
-
+// handle punctuation marks at the last string slice
 	for i, word := range s {
 		for _, mark := range punctuations {
 			if strings.HasPrefix(word, string(mark)) && s[i] == s[len(s)-1] {

@@ -5,9 +5,10 @@ import (
 	"strings"
 )
 
+// function to punctuate single quote marks appropriately
 func FixApostrophe(s []string) []string {
 	pattern := regexp.MustCompile(`'\s*(.*?)\s*'`)
 	newString := pattern.ReplaceAllString(strings.Join(s, " "), "'$1' ")
-	// text := newString + "\n"
+
 	return strings.Fields(newString)
 }
