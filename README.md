@@ -14,12 +14,12 @@ This project is a text formatter written in Go. It takes a text file as input an
 
 ## Usage
 This program takes two arguments:
-	1. Input file:The text file we are modifying in this case; sample.txt
-	2. Output file: the text file where the modified file will be saved; result.txt
+- `Input file`:The text file we are modifying in this case; `sample.txt`
+- `Output file`: the text file where the modified file will be saved; result.txt
 	
 ## How to use:
 Open your terminal window
-Create a sample.txt file and insert the content you want modify.
+Create a `sample.txt` file and insert the content you want modify.
 ```go
 	$ echo "Your text to modify" > sample.txt
 ```
@@ -34,7 +34,6 @@ To run the program you run the following command:
 Test file has also been included. To run the file to test the functions, on the terminal type:
 ```go
 	$ go test -v
-	$	
 ```
 ## Author
 [skisenge](https://learn.zone01kisumu.ke/git/skisenge)
