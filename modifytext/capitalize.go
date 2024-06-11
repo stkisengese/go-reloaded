@@ -14,7 +14,7 @@ func Capitalize(s []string) []string {
 	for i := 0; i < len(s); i++ {
 		if strings.Contains(s[i], "cap,") { // search for number of words to modify
 			number, err := strconv.Atoi(s[i+1][:len(s[i+1])-1])
-			
+
 			if err != nil || number > i {
 				fmt.Printf("Error at conversion; '%v' or 'cap, %v' is out of range.\n", err, number)
 			} else {
