@@ -42,7 +42,7 @@ func main() {
 
 	error := os.WriteFile(args[1], []byte(final), 0o644)
 	if error != nil {
-		errorMsg := fmt.Sprintf("Error writing file %s: %v", args[1], err)
+		errorMsg := fmt.Sprintf("Error writing file '%s': %v", args[1], err)
 		log.Fatal(errorMsg)
 	}
 }
