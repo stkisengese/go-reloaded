@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// function to convert hexadecimal to its decimal equivalent
+// Hexadecimal function to convert hexadecimal to its decimal equivalent
 func Hexadecimal(s []string) []string {
 	for i, text := range s {
 		if text == "(hex)" {

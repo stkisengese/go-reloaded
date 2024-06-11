@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// function to convert binary to its equivalent decimal
+// Binary function to convert binary to its equivalent decimal.
 func Binary(s []string) []string {
 	for i, text := range s {
 		if text == "(bin)" {

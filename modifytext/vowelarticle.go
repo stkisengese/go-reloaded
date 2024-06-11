@@ -1,6 +1,6 @@
 package go_reloaded
 
-// logic for adding article for words starting with vowels
+// VowelArticle has logic for adding article for words starting with vowels
 func VowelArticle(s []string) []string {
 	vowels := []byte{'a', 'e', 'i', 'o', 'u', 'h', 'A', 'E', 'I', 'O', 'U', 'H'}
 
